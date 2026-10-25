@@ -1,0 +1,17 @@
+{
+  "name": "spintax-bot",
+  "version": "1.0.0",
+  "description": "Spintax for EmailBison, Smartlead and Instantly cold emails, with a humanizer, a CLI, Claude skills and optional bring-your-own-key AI mode.",
+  "main": "src/spintax.js",
+  "bin": { "spintax": "cli/spin.js" },
+  "scripts": {
+    "test": "node test/harness.js && node scripts/generate-examples.js",
+    "examples": "node scripts/generate-examples.js",
+    "spin": "node cli/spin.js",
+    "serve": "python3 -m http.server 8000"
+  },
+  "engines": { "node": ">=18" },
+  "keywords": ["spintax", "cold-email", "emailbison", "smartlead", "instantly", "deliverability", "humanizer", "claude", "skills"],
+  "author": "Rohan Jhunjhunwala (https://www.linkedin.com/in/rohan-jjw/)",
+  "license": "MIT"
+}

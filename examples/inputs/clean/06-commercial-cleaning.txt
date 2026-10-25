@@ -1,0 +1,10 @@
+Hey {FIRST_NAME},
+
+Quick question. Who handles cleaning for the {COMPANY_NAME} office in {CITY}?
+
+We clean offices for a lot of companies nearby, and most switch to us because their current crew misses things and nobody follows up.
+
+I would be happy to stop by for a free walkthrough and send you a quote the same day.
+
+Thanks,
+{SENDER_EMAIL_SIGNATURE}

@@ -1,0 +1,12 @@
+Hi {{firstName}},
+
+I saw {{companyName}} added outbound to your services page this year.
+
+A lot of agencies I talk to sell outbound fast and then struggle to deliver it, because nobody on the team owns the lists, the inboxes and the copy.
+
+I do that work for agencies under their brand, so your clients only ever see your name.
+
+Would it be worth a quick call to see if it fits?
+
+Cheers,
+{{accountSignature}}

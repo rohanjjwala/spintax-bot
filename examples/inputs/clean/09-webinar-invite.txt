@@ -1,0 +1,12 @@
+Subject: quick invite, {FIRST_NAME}
+
+Hi {FIRST_NAME},
+
+We are hosting a short session next Thursday on how sales teams book more meetings from cold email without burning their domains.
+
+It is 30 minutes, no slides, and we will share the exact checklist we use.
+
+Would you like me to save you a spot?
+
+Thanks,
+{SENDER_EMAIL_SIGNATURE}

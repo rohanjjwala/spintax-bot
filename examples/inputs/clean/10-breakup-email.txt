@@ -1,0 +1,12 @@
+Hi {{first_name|there}},
+
+I have reached out a few times, so I will keep this short.
+
+If improving reply rates is not a priority at {{company_name|your company}} right now, no problem at all.
+
+If it is, I am happy to send over a quick plan. Here it is if you want to look first: https://example.com/plan
+
+Either way, thanks for reading.
+
+Best,
+%signature%

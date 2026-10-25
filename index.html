@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%231b062d%27/%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2712%27 fill=%27%23e5591e%27/%3E%3C/svg%3E">
+<title>Spintax Bot · Rohan Jhunjhunwala</title>
+<meta name="description" content="Free spintax bot for EmailBison, Instantly and Smartlead. Paste your cold email, pick the intensity, copy the spintax.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght,SOFT@9..144,400;9..144,500,50&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="web/css/base.css">
+<link rel="stylesheet" href="web/css/site.css">
+<link rel="stylesheet" href="web/css/theme.css">
+<link rel="stylesheet" href="web/css/spintax.css">
+
+</head>
+<body class="tool-page">
+<header class="tbar"><div class="wrap tbar-in"><a class="brand-ink" href="https://www.linkedin.com/in/rohan-jjw/" target="_blank" rel="noopener">Spintax Bot<span class="by"> · Rohan Jhunjhunwala</span></a><nav><a href="https://github.com/rohanjjwala/spintax-bot" target="_blank" rel="noopener">GitHub</a><a class="btn btn-sm btn-ink" href="https://calendly.com/rohan_jhunjhunwala/30min" target="_blank" rel="noopener" data-copy="book">Book a call</a></nav></div></header>
+
+<main class="wrap tool-main">
+  <section class="tool-head">
+    <span class="chip c-tan mono" data-copy="kicker">Free tool · runs in your browser</span>
+    <h1 class="serif" data-copy="title">Spintax Bot for EmailBison, Instantly and Smartlead</h1>
+    <p class="sub" data-copy="sub">Spintax for EmailBison, Instantly and Smartlead, in the syntax each one expects. Paste your email, pick how much and where to vary it, press Spin it.</p>
+    <div class="kb mono" id="kb"></div>
+  </section>
+
+  <section class="tool-grid">
+    <div class="card pane">
+      <div class="pane-h"><label for="src" class="lbl" data-copy="inLabel">Your email</label><button class="btn btn-sm btn-ghost" id="example" type="button" data-copy="example">Load an example</button></div>
+      <textarea id="src" rows="14" spellcheck="true" placeholder="Paste the subject and body. Merge tags like {{first_name}}, {FIRST_NAME} and %signature% are never spun, and get rewritten to the syntax of the tool you pick."></textarea>
+      <div class="meta mono" id="srcMeta">0 words</div>
+
+      <div class="ctrls">
+        <div class="ctrl"><span class="lbl" data-copy="platform">Platform</span>
+          <div class="seg" id="platform" role="group" aria-label="Sending tool"><span class="thumb"></span><button type="button" data-v="bison" aria-pressed="true">EmailBison</button><button type="button" data-v="instantly" aria-pressed="false">Instantly</button><button type="button" data-v="smartlead" aria-pressed="false">Smartlead</button></div>
+          <p class="hint mono" id="syntaxHint"></p></div>
+        <div class="ctrl"><span class="lbl" data-copy="intensity">How much to vary</span>
+          <div class="seg" id="intensity" role="group" aria-label="Intensity"><span class="thumb"></span><button type="button" data-v="0.5" aria-pressed="false">50%</button><button type="button" data-v="0.8" aria-pressed="true">80%</button><button type="button" data-v="1" aria-pressed="false">100%</button></div>
+          <p class="hint" id="intHint"></p></div>
+        <div class="ctrl"><span class="lbl" data-copy="mode">Where to vary</span>
+          <div class="seg" id="mode" role="group" aria-label="Spin style"><span class="thumb"></span><button type="button" data-v="word" aria-pressed="true">Word-level</button><button type="button" data-v="sentence" aria-pressed="false">Sentence-level</button><button type="button" data-v="mixed" aria-pressed="false">Mixed</button></div>
+          <p class="hint" id="modeHint"></p></div>
+        <div class="ctrl toggles">
+          <label class="sw"><input type="checkbox" id="humanize" checked><span class="track"><i></i></span><span><b data-copy="humanize">Humanize first</b><em data-copy="humanizeSub">Cuts dashes, filler and AI words before spinning.</em></span></label>
+          <label class="sw"><input type="checkbox" id="convert" checked><span class="track"><i></i></span><span><b data-copy="convert">Match variable syntax</b><em data-copy="convertSub">Rewrites variables and the signature tag for the tool you picked.</em></span></label>
+        </div>
+        <details class="ai-panel" id="aiPanel">
+          <summary><span class="lbl">AI mode</span><span class="ai-sum mono" id="aiSum">off · optional</span></summary>
+          <div class="ai-body">
+            <p class="hint">Connect your own Claude or OpenAI key and the model writes the spintax. The bot still checks every answer: merge tags outside blocks, no nesting, 1,000 renders linted. If the answer fails, you get the bot's version instead.</p>
+            <label class="sw"><input type="checkbox" id="aiOn"><span class="track"><i></i></span><span><b>Write with AI</b><em>Uses your key on every Spin it.</em></span></label>
+            <div class="ai-row">
+              <div class="seg" id="aiProvider" role="group" aria-label="AI provider"><span class="thumb"></span><button type="button" data-v="claude" aria-pressed="true">Claude</button><button type="button" data-v="openai" aria-pressed="false">OpenAI</button></div>
+              <label class="ai-field"><span class="mono tiny">Model</span><input id="aiModel" list="aiModels" autocomplete="off" spellcheck="false"><datalist id="aiModels"></datalist></label>
+            </div>
+            <label class="ai-field"><span class="mono tiny" id="aiKeyLbl">Anthropic API key</span><input id="aiKey" type="password" autocomplete="off" spellcheck="false" placeholder="Paste your key"></label>
+            <label class="ai-remember"><input type="checkbox" id="aiRemember"> <span>Remember on this device (stored in this browser only)</span></label>
+            <p class="tiny muted">Your key never touches a server of ours. Requests go from your browser straight to the provider, and you pay the provider for usage.</p>
+          </div>
+        </details>
+        <div class="go"><button class="btn btn-cta go-btn" id="spin" type="button"><span class="ic">✦</span>Spin it</button><span class="mono tiny muted">or press <kbd>⌘</kbd> <kbd>Enter</kbd></span></div>
+      </div>
+    </div>
+
+    <div class="card pane out">
+      <div class="pane-h">
+        <div class="tabs" role="tablist" aria-label="Output">
+          <button role="tab" aria-selected="true" data-t="spin" id="t-spin">Spintax</button><button role="tab" aria-selected="false" data-t="preview" id="t-preview">Preview</button><button role="tab" aria-selected="false" data-t="checks" id="t-checks">Checks</button><button role="tab" aria-selected="false" data-t="human" id="t-human">Changes</button>
+        </div>
+        <button class="btn btn-sm btn-ghost" id="regen" type="button" title="New picks with the same settings"><span class="ic">↻</span><span data-copy="regen">Reshuffle</span></button>
+      </div>
+      <div class="stats mono" id="stats"></div>
+      <div class="tabp" id="p-spin" role="tabpanel" aria-labelledby="t-spin"><pre class="code" id="out" aria-live="polite"></pre>
+        <div class="copyrow"><button class="btn btn-ink btn-sm" id="copyTxt" type="button" data-copy="copy">Copy spintax</button><button class="btn btn-ghost btn-sm" id="copyHtml" type="button" data-copy="copyHtml">Copy as HTML</button><span class="tiny muted" id="copied" role="status"></span></div></div>
+      <div class="tabp" id="p-preview" role="tabpanel" aria-labelledby="t-preview" hidden><div id="renders"></div><button class="btn btn-sm btn-ghost" id="shuffle" type="button" data-copy="shuffle">Show 3 more</button></div>
+      <div class="tabp" id="p-checks" role="tabpanel" aria-labelledby="t-checks" hidden><ul class="checks" id="checks"></ul><p class="tiny muted" data-copy="checksNote">The bot renders 1,000 random versions of your email and checks each one. Worst case is the hardest version to read.</p></div>
+      <div class="tabp" id="p-human" role="tabpanel" aria-labelledby="t-human" hidden><ul class="checks" id="changes"></ul></div>
+    </div>
+  </section>
+
+  <section class="how">
+    <h2 class="serif" data-copy="howTitle">How it works</h2>
+    <ol class="how-list">
+      <li><b data-copy="how1t">Variables stay put.</b><span data-copy="how1">Anything in braces, your signature tag, links, emails and numbers are locked before spinning. They never end up inside a spin block.</span></li>
+      <li><b data-copy="how2t">Words, from a cold email phrase bank.</b><span data-copy="how2">Each block only swaps phrases that fit the same spot in a sentence, so every combination reads like English. "a" and "an" get fixed for you.</span></li>
+      <li><b data-copy="how3t">Sentences, for the lines everyone writes.</b><span data-copy="how3">CTAs, opt-outs, follow-up bumps and sign-offs get whole-sentence alternatives that keep the same ask.</span></li>
+      <li><b data-copy="how4t">Checked by rendering.</b><span data-copy="how4">1,000 random versions get linted for doubled words, broken articles, dashes and spam words before you copy anything.</span></li>
+    </ol>
+  </section>
+</main>
+
+<footer class="tfoot wrap mono"><span>Built by Rohan Jhunjhunwala. Without AI mode, nothing you paste leaves this page. With AI mode, it goes straight from your browser to the provider you pick, on your key.</span><a href="https://www.linkedin.com/in/rohan-jjw/" target="_blank" rel="noopener">Connect on LinkedIn</a></footer>
+
+<script src="examples/examples.js"></script>
+<script src="src/spintax.js"></script>
+<script src="src/ai.js"></script>
+<script src="web/js/ui.js"></script>
+<script src="web/js/ai-ui.js"></script>
+</body>
+</html>

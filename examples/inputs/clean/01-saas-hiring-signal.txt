@@ -1,0 +1,12 @@
+Subject: {{company_name}} and the new SDR roles
+
+Hi {{first_name}},
+
+I noticed {{company_name}} is hiring 2 SDRs right now. Usually that means the team wants more meetings on the calendar, fast.
+
+We recently worked with a similar company and booked 14 calls in their first month, before their new reps finished onboarding.
+
+I put together a quick list of 25 accounts in your space that look like your best customers. Mind if I send it over?
+
+Best,
+%signature%

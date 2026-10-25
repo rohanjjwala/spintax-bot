@@ -1,0 +1,9 @@
+Hi {{first_name}},
+
+I hope all is well. I've reached out a few times and haven't heard back, which is totally understandable given how busy things can get.
+
+I just wanted to say that if you ever want to revisit this, my door is always open. It would truly be a pleasure to support {{company_name}} on its journey.
+
+Wishing you continued success!
+
+%signature%

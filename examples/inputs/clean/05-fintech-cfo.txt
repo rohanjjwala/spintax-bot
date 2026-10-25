@@ -1,0 +1,12 @@
+Subject: month-end close at {{companyName}}
+
+Hi {{firstName}},
+
+I noticed {{companyName}} just opened an office in London. A second entity usually makes month-end close take twice as long.
+
+Our team helps finance leads close the books in 5 days, even across several entities.
+
+Open to a short call next week to see if it fits?
+
+Best regards,
+{{accountSignature}}

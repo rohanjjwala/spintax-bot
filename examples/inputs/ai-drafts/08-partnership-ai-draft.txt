@@ -1,0 +1,10 @@
+Hi {{firstName}},
+
+I came across {{companyName}} and couldn't help but notice the amazing work your team is doing in the space.
+
+I believe there is a tremendous opportunity for synergy between our organizations. By leveraging our respective strengths, we could unlock significant mutual value.
+
+I'd be thrilled to explore this further at your convenience.
+
+Cheers,
+{{accountSignature}}

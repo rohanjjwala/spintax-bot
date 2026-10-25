@@ -1,0 +1,9 @@
+Hey {FIRST_NAME},
+
+I hope you are having a wonderful week! I am reaching out to introduce our top-notch commercial cleaning services.
+
+We pride ourselves on delivering exceptional, unparalleled quality, and our dedicated team goes above and beyond to ensure your complete satisfaction.
+
+Don't hesitate to let me know if this resonates with you.
+
+{SENDER_EMAIL_SIGNATURE}

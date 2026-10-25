@@ -1,0 +1,10 @@
+Hi {{first_name}},
+
+Congrats on the new contract with the hospital group. I saw the announcement on LinkedIn.
+
+When a staffing firm lands a deal that size, the hard part is usually filling night shifts quickly.
+
+We keep a ready list of nurses in your area who have already been screened. Would it help if I sent you 10 profiles for your open shifts?
+
+Best,
+%signature%

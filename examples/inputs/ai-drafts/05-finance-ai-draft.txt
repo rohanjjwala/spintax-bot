@@ -1,0 +1,10 @@
+Hi {{firstName}},
+
+I'm reaching out to see if {{companyName}} might benefit from our comprehensive, end-to-end financial close solution.
+
+It's not just about saving time — it's about transforming the way your team works, unlocking actionable insights, and driving strategic value.
+
+Would love to schedule a call to discuss further!
+
+Best,
+{{accountSignature}}

@@ -1,0 +1,12 @@
+Subject: {FIRST_NAME}, after-hours calls
+
+Hey {FIRST_NAME},
+
+Saw {COMPANY_NAME} is hiring a dispatcher in {CITY}. Usually that means the phones are full and some calls go to voicemail after 5pm.
+
+We help HVAC shops answer every call and book the job, even at night.
+
+Worth a quick chat this week?
+
+Thanks,
+{SENDER_EMAIL_SIGNATURE}

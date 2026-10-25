@@ -1,0 +1,10 @@
+Hi {{first_name}},
+
+Just following up on my last note in case it got buried.
+
+I still have the list of 25 accounts ready for {{company_name}}.
+
+Want me to send it over?
+
+Thanks,
+%signature%

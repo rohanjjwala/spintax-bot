@@ -1,0 +1,10 @@
+Hi {{firstName}},
+
+I was looking at {{companyName}} and noticed your product pages do not show reviews above the fold.
+
+Most brands your size lose a few sales a day to that, and it is a quick fix.
+
+I recorded a short video with 3 changes I would make to your best seller page. Want me to send it?
+
+Thanks,
+{{accountSignature}}

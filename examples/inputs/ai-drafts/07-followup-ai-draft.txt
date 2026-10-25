@@ -1,0 +1,9 @@
+Hi {{first_name}},
+
+I just wanted to circle back on my previous email. I understand you're incredibly busy, so I'll keep this brief.
+
+Simply put, we can help {{company_name}} supercharge its pipeline — it's that simple.
+
+Let me know your thoughts!
+
+%signature%

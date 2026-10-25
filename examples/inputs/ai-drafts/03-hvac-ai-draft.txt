@@ -1,0 +1,9 @@
+Hey {FIRST_NAME},
+
+I just wanted to touch base and introduce myself. We're a leading provider of state-of-the-art answering solutions — designed to empower HVAC businesses like {COMPANY_NAME}.
+
+Additionally, our solution integrates seamlessly with your existing tools, ensuring a frictionless experience.
+
+Looking forward to hearing from you!
+
+{SENDER_EMAIL_SIGNATURE}
